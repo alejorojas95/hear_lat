@@ -1,0 +1,250 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   background: url('./veni.jpg') no-repeat center center;
+   background-size: cover;
+   height: 100vh;
+ }
+
+
+@keyframes animacion {
+  0% {
+    box-shadow: 0 0 0 0 rgb(229, 6, 6),  0 0 0 0 rgba(29, 171, 209, .6);
+  }
+
+  30% {
+    box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 0 rgb(229, 6, 6);
+  }
+
+  65% {
+    box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(29, 171, 209, 0), , 0 0 0 30px rgba(29, 171, 209, 0);
+  }
+
+}
+
+
+
+h1 {
+    position: absolute;
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(229, 6, 6), rgb(172, 12, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    top: 20% !important;
+    left: 32% !important;
+    animation: animacion2 1.8s linear infinite;
+}
+
+.heart-shape {
+    color: white;
+    font-family: 'calibri', sans-serif;
+    top: 40%;
+    left: 40%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: rgb(162, 6, 6);
+    animation: animacion 1.8s linear infinite;
+    animation: latido 1.5s infinite; /* nuestro corazón tiene latidos infinitos */
+}
+
+    .heart-shape:before,
+    .heart-shape:after {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        content: '';
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        background-color: rgb(162, 6, 6);
+        
+        color: white;
+        font-family: 'calibri', sans-serif;
+    }
+
+    .heart-shape:before {
+        bottom: 0px;
+        left: -100px;
+        color: white;
+        font-family: 'calibri', sans-serif;
+    }
+
+    .heart-shape:after {
+        top: -100px;
+        right: 0px;
+        color: white;
+        font-family: 'calibri', sans-serif;
+    }
+
+
+@media (max-width: 376px) {
+
+    h1 {
+        position: absolute;
+        font-size: 70px !important;
+
+        top: 5% !important;
+        left: 50% !important;
+    
+    }
+
+    .heart-shape {
+        top: 50%;
+        left: 25%;
+        position: absolute;
+        width: 90px;
+        height: 90px;
+    }
+
+        .heart-shape:before,
+        .heart-shape:after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgb(162, 6, 6);
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+
+        .heart-shape:before {
+            bottom: 0px;
+            left: -100px;
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+
+        .heart-shape:after {
+            top: -100px;
+            right: 0px;
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+    body {
+        background: url('./veni.jpg') no-repeat center center;
+        background-size: cover;
+        height: 1000px;
+    }
+}
+
+@media (max-width: 426px) {
+
+    h1 {
+        position: absolute;
+        font-size: 80px !important;
+        top: 5% !important;
+        left: 15% !important;
+    }
+
+    .heart-shape {
+        top: 50%;
+        left: 25%;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+
+        .heart-shape:before,
+        .heart-shape:after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background-color: rgb(162, 6, 6);
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+
+        .heart-shape:before {
+            bottom: 0px;
+            left: -100px;
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+
+        .heart-shape:after {
+            top: -100px;
+            right: 0px;
+            color: white;
+            font-family: 'calibri', sans-serif;
+        }
+
+    body {
+        background: url('./veni.jpg') no-repeat center center;
+        background-size: cover;
+        height: 1000px;
+    }
+
+
+}
+@keyframes latido {
+    0% {
+        transform: scale( 0.25 ) rotate(45deg);
+        box-shadow: 0 0 0 0  rgb(162, 6, 6), 0 0 0 0 rgb(229, 6, 6);
+    }
+
+    20% {
+        transform: scale( 0.75 ) rotate(45deg);
+        box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 0 rgb(229, 6, 6);
+    }
+
+    30% {
+       
+        box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 0 rgb(229, 6, 6);
+    }
+
+    40% {
+        transform: scale( 1.2 ) rotate(45deg);
+        box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 0 rgb(229, 6, 6);
+    }
+    65% {
+        
+        box-shadow: 0 0 0 200px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+
+    100% {
+        
+        box-shadow: 0 0 0 0  rgba(29, 171, 209, 0),, 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+}
+
+@keyframes animacion2 {
+    0% {
+        box-shadow: 0 0 0 0 rgb(162, 6, 6), 0 0 0 0 rgba(29, 171, 209, .6);
+    }
+
+    30% {
+        box-shadow: 0 0 0 20px rgba(29, 171, 209, 0), 0 0 0 0 rgb(172, 12, 211);
+    }
+
+    65% {
+        box-shadow: 0 0 0 20px rgba(29, 171, 209, 0), 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 171, 209, 0),, 0 0 0 30px rgba(29, 171, 209, 0);
+    }
+}
